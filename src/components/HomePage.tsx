@@ -10,8 +10,8 @@ function HomePage() {
 
   return (
     <Container className="mt-5">
-      <h1>Welcome, {user.name}!</h1>
-      <p>You are now {user.isLoggedIn ? 'logged in' : 'logged out'}.</p>
+      <h1>Welcome, {user?.name}!</h1>
+      <p>You are now {user?.isLoggedIn ? 'logged in' : 'logged out'}.</p>
     </Container>
   );
 }
