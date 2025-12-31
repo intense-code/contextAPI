@@ -2,11 +2,7 @@ import { useContext, useState } from 'react';
 import UserContext from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-
-type User = {
-  name: string;
-  isLoggedIn: boolean;
-};
+import {User} from '../model/User.model'
 
 function Login() {
   const [username, setUsername] = useState<string>('');
